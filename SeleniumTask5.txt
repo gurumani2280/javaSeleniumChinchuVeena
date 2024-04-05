@@ -1,0 +1,12 @@
+1. navigate to below url
+https://demo.automationtesting.in/Index.html
+
+	2. enter dummy email 
+	3. click on arrow button
+
+	
+	
+
+
+
+

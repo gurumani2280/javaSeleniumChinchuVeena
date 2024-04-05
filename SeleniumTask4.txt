@@ -1,0 +1,11 @@
+1. navigate to below url
+https://demo.automationtesting.in/Index.html
+
+	2. click skip sign in button 
+
+	
+	
+
+
+
+
