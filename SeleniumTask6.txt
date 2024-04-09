@@ -1,0 +1,9 @@
+1. navigate to below url
+https://demo.automationtesting.in/Register.html
+
+2. identify each element and interact (click / sendkey) 
+	
+
+
+
+
