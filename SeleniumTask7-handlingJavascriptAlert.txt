@@ -1,0 +1,15 @@
+https://www.selenium.dev/documentation/webdriver/interactions/alerts/
+
+1. navigate to below url
+https://the-internet.herokuapp.com/javascript_alerts
+
+click each of the three button and click alert (accepts /dismiss) ,and verify the text
+
+
+
+
+	
+
+
+
+

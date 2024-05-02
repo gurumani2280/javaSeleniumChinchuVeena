@@ -1,0 +1,23 @@
+https://the-internet.herokuapp.com/jqueryui/menu#
+
+http://www.dhtmlgoodies.com/submitted-scripts/i-google-like-drag-drop/index.html
+
+
+https://www.guru99.com/double-click-and-right-click-selenium.html
+How to Right Click in Selenium
+Test Scenario:
+
+Launch the URL: https://demo.guru99.com/test/simple_context_menu.html
+Perform Right Click operation on the button : right click me
+Click on Edit link on the displayed list of right click options
+Click on OK button on the alert displayed
+Close the browser
+
+
+How to Double Click in Selenium
+Test Scenario
+
+Launch the URL: https://demo.guru99.com/test/simple_context_menu.html
+Double click on the button labelled ‘Double-Click Me To See Alert’
+Click on OK button on the displayed alert
+Close the browser
