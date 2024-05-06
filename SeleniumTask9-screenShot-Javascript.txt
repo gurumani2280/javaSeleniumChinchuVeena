@@ -1,0 +1,14 @@
+https://scrapfly.io/blog/how-to-take-screenshot-with-selenium/
+https://www.lambdatest.com/blog/python-screenshots/
+
+
+https://pythonbasics.org/selenium-execute-javascript/
+https://testsigma.com/blog/scrolling-in-selenium/
+
+https://www.w3schools.com/jsref/met_win_scrollto.asp
+
+https://pythonbasics.org/selenium-scroll-down/
+
+
+
+https://pythonbasics.org/selenium-cookies/
