@@ -1,9 +1,13 @@
 package com.standalone;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import com.pages.SauceCheckoutCompletePage;
+import com.pages.SauceCheckoutOverviewPage;
+import com.pages.SauceCheckoutYourInfoPage;
 import com.pages.SauceLoginPage;
+import com.pages.SauceProductPage;
+import com.pages.SauceYourCartPage;
 
 public class SauceE2eTest extends BaseTest{
 	
@@ -14,30 +18,32 @@ public class SauceE2eTest extends BaseTest{
 		SauceLoginPage slp = new SauceLoginPage(driver);
 		slp.login("standard_user", "secret_sauce");
 		Thread.sleep(2000);
-		driver.findElement(By.name("add-to-cart-sauce-labs-backpack")).click();
+		
+		SauceProductPage spp = new SauceProductPage(driver);
+		spp.addBackpackToCart();
 		Thread.sleep(2000);
-		driver.findElement(By.name("add-to-cart-sauce-labs-bike-light")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.className("shopping_cart_link")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.name("checkout")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.name("firstName")).sendKeys("abc");
-		Thread.sleep(2000);
-		driver.findElement(By.name("lastName")).sendKeys("xyz");
-		Thread.sleep(2000);
-		driver.findElement(By.name("postalCode")).sendKeys("560110");
-		Thread.sleep(2000);
-		driver.findElement(By.name("continue")).click();
+		spp.addLightToCart();
+		spp.clickCartLink();
 		Thread.sleep(2000);
 		
-		driver.findElement(By.name("finish")).click();
+		SauceYourCartPage sycp = new SauceYourCartPage(driver);
+		sycp.clickCheckoutButton();
 		Thread.sleep(2000);
-		driver.findElement(By.name("back-to-products")).click();
+		
+		SauceCheckoutYourInfoPage scyip = new SauceCheckoutYourInfoPage(driver);
+		scyip.enterInformation("abc", "xyz", "560110");
+		scyip.clickContinue();
 		Thread.sleep(2000);
-		driver.findElement(By.id("react-burger-menu-btn")).click();
+
+		SauceCheckoutOverviewPage scop = new SauceCheckoutOverviewPage(driver);
+		scop.clickFinishButton();
 		Thread.sleep(2000);
-		driver.findElement(By.id("logout_sidebar_link")).click();
+		
+		SauceCheckoutCompletePage sccp = new SauceCheckoutCompletePage(driver);
+		sccp.clickBackHomeButton();
+		Thread.sleep(2000);
+
+		spp.logout(); 
 		
 		Thread.sleep(2000);
 	}

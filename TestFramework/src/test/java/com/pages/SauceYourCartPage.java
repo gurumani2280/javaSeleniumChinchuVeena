@@ -5,20 +5,22 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SauceCheckoutOverviewPage extends BasePage{
+public class SauceYourCartPage extends BasePage{
+	
 	WebDriver driver;
 	
-	public SauceCheckoutOverviewPage(WebDriver driver) {
+	public SauceYourCartPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(name = "finish")
-	private WebElement finisButton;
+	@FindBy(name = "checkout")
+	private WebElement checkoutButton;
 	
-	public void clickFinishButton() {
-		finisButton.click();
+	public void clickCheckoutButton() {
+		checkoutButton.click();
 	}
+	
 
 }

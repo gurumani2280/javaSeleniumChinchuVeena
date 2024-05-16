@@ -1,6 +1,5 @@
 package com.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,11 +23,17 @@ public class SauceLoginPage {
 	@FindBy(name = "login-button")
 	private WebElement loginButton;
 	
+	@FindBy(tagName = "h3")
+	private WebElement errorMessage;
 	
 	public void login(String user, String password) {
 		userNameField.sendKeys(user);
 		passwordField.sendKeys(password);
 		loginButton.click();
+	}
+	
+	public String getLoginErrorMessage() {
+		return errorMessage.getText();
 	}
 
 }
