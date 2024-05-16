@@ -1,0 +1,66 @@
+168  vim .bash_profile  
+170  which postgres  
+171  echo $PATH  
+173 echo $JAVA_HOME  
+174  echo $(/usr/libexec/java_home)  
+175  which mvn  
+176  vim .bash_profile  
+177  ls /usr/local/  
+178  ls  
+179  ls /usr/local/bin/mvn  
+180  mvn -version  
+181  vim .bash_profile  
+182  source .bash_profile   
+183  echo $JAVA_HOME  
+184  vim .bash_profile  
+185  ls  
+186  vim .bash_profile
+Admins-MacBook-Pro:~ manish$ cat .bash_profile
+export JAVA_HOME=$(/usr/libexec/java_home)
+export M2_HOME=/usr/local/Cellar/maven/3.5.3/libexecexport 
+PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH:/usr/local/bin/mvn
+
+205  scp /Users/manish/Downloads/apache-tomcat-8.5.3.tar.gz /programs/ 206  sudo scp /Users/manish/Downloads/apache-tomcat-8.5.3.tar.gz /mobileiron.com/programs/
+220  cd ../data/223  sudo git clone https://mkumar@stash.mobileiron.com/scm/cn/com.mobileiron.corona.cms.git
+tar -xzvf archive.tar.gz -C  — give your zip file name
+
+=====--===-
+Steps for code repo:-
+brew. — to check if brew is installed or not  2  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" — to install brew - searched on google and provided laptop password while intalling  
+
+
+186  vim .bash_profileAdmins-MacBook-Pro:~ manish$ cat .bash_profile
+export JAVA_HOME=$(/usr/libexec/java_home)
+export M2_HOME=/usr/local/Cellar/maven/3.5.3/libexec
+export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH:/usr/local/bin/mvn
+205  scp /Users/manish/Downloads/apache-tomcat-8.5.3.tar.gz /mobileiron.com/programs/ 
+206  sudo scp /Users/manish/Downloads/apache-tomcat-8.5.3.tar.gz /mobileiron.com/programs/
+220  cd ../data/223  sudo git clone https://mkumar@stash.mobileiron.com/scm/cn/com.mobileiron.corona.cms.git
+tar -xzvf archive.tar.gz -C  — give your zip file name
+
+=====--===-
+
+brew. — to check if brew is installed or not  
+2  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" — to install brew - searched on google and provided laptop password while intalling 
+3 brew doctor  
+4 brew install git  — to install git  
+5  git --version  
+6 cd ~/Documents/Access/Automation/SourceCode/  
+7  git clone https://mkumar@stash.mobileiron.com/scm/automation/com.mobileiron.automation.cms.common.gitprovided just mail password  8  git clone https://mkumar@stash.mobileiron.com/scm/automation/com.mobileiron.automation.cms.cmsfr.git 
+9  git clone https://mkumar@stash.mobileiron.com/scm/automation/com.mobileiron.automation.cms.ui.git  
+10  brew install maven  
+11  mvn -version  
+
+
+13  mvn clean install -DskipTests=true  — it was giving error related to parent project , added settings.xml in .m2 folder 
+14  mvn clean install -DskipTests=true  
+15  cd  ~  
+16  cd .m2  
+17  mvn clean install -DskipTests=true  
+18  cd ~  
+
+21  mvn clean install -DskipTests=true\
+run above mvn command for the other folder cmd and ui also
+and then import the updated project in the eclipse
+How to get the git clone link:-open the link 
+So I have the code base access now I have to install Docker now 

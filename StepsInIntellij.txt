@@ -1,0 +1,36 @@
+
+search intellij download
+
+downoad community edition 
+from below url
+https://www.jetbrains.com/idea/download/#section=windows
+
+one exe file will download --- put in some folder and double click to install
+
+open intellij -- do not import setting
+create a project = select maven as build system
+
+
+
+
+
+
+
+
+
+
+
+
+
+STEPS: TestNG on Intellij IDEA
+
+Step 1 - Open IntelliJ IDEA
+
+Step 2 - Goto Settings ＞ Plugins (check if testng is available)
+
+Step 3 - Add TestNG jar OR Maven dependency 
+
+Step 4 - Create class and test methods - Add testng annotations ＞ Run
+
+To Create configuration - Run ＞ Edit Configurations
+To create testng.xml - add plugin Create TestNg XML 
