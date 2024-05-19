@@ -20,8 +20,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export M2_HOME=/usr/local/Cellar/maven/3.5.3/libexecexport 
 PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH:/usr/local/bin/mvn
 
-205  scp /Users/manish/Downloads/apache-tomcat-8.5.3.tar.gz /programs/ 206  sudo scp /Users/manish/Downloads/apache-tomcat-8.5.3.tar.gz /mobileiron.com/programs/
-220  cd ../data/223  sudo git clone https://mkumar@stash.mobileiron.com/scm/cn/com.mobileiron.corona.cms.git
+205  scp /Users/manish/Downloads/apache-tomcat-8.5.3.tar.gz /programs/ 206  sudo scp /Users/manish/Downloads/apache-tomcat-8.5.3.tar.gz /abc.com/programs/
+220  cd ../data/223  sudo git clone https://mkumar@stash.abc.com/scm/cn/corona.cms.git
 tar -xzvf archive.tar.gz -C  — give your zip file name
 
 =====--===-
@@ -33,9 +33,9 @@ brew. — to check if brew is installed or not  2  ruby -e "$(curl -fsSL https://r
 export JAVA_HOME=$(/usr/libexec/java_home)
 export M2_HOME=/usr/local/Cellar/maven/3.5.3/libexec
 export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH:/usr/local/bin/mvn
-205  scp /Users/manish/Downloads/apache-tomcat-8.5.3.tar.gz /mobileiron.com/programs/ 
-206  sudo scp /Users/manish/Downloads/apache-tomcat-8.5.3.tar.gz /mobileiron.com/programs/
-220  cd ../data/223  sudo git clone https://mkumar@stash.mobileiron.com/scm/cn/com.mobileiron.corona.cms.git
+205  scp /Users/manish/Downloads/apache-tomcat-8.5.3.tar.gz /programs/ 
+206  sudo scp /Users/manish/Downloads/apache-tomcat-8.5.3.tar.gz /abc.com/programs/
+220  cd ../data/223  sudo git clone https://mkumar@stash.abc.com/scm/cn/com.abc.corona.cms.git
 tar -xzvf archive.tar.gz -C  — give your zip file name
 
 =====--===-
@@ -46,8 +46,8 @@ brew. — to check if brew is installed or not 
 4 brew install git  — to install git  
 5  git --version  
 6 cd ~/Documents/Access/Automation/SourceCode/  
-7  git clone https://mkumar@stash.mobileiron.com/scm/automation/com.mobileiron.automation.cms.common.gitprovided just mail password  8  git clone https://mkumar@stash.mobileiron.com/scm/automation/com.mobileiron.automation.cms.cmsfr.git 
-9  git clone https://mkumar@stash.mobileiron.com/scm/automation/com.mobileiron.automation.cms.ui.git  
+7  git clone https://mkumar@stash.abc.com/scm/automation/com.abc.automation.cms.common.gitprovided just mail password  8  git clone https://mkumar@stash.abc.com/scm/automation/com.abc.automation.cms.cmsfr.git 
+9  git clone https://mkumar@stash.abc.com/scm/automation/com.abc.automation.cms.ui.git  
 10  brew install maven  
 11  mvn -version  
 
