@@ -63,6 +63,6 @@ add parameter
 
 ${suiteXmlFile}
 
-clean test -DsuiteXmlFile
+clean test -DsuiteXmlFile=testing.xml
 
 clean test -DsuiteXmlFile=$testngxml
